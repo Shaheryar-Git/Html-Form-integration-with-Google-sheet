@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="on" class="booking-form" id="form">
+        <h2>Prenota La Call</h2>
+        <label for="Nome">Nome</label>
+        <input type="text"  name="Nome" placeholder="Nome" required>
+    
+        <label for="Cognome">Cognome</label>
+        <input type="text" name="Cognome" placeholder="Cognome" required>
+    
+        <label for="email">Email</label>
+        <input type="email"  name="Email" placeholder="Email" required>
+    
+        <label for="booking-code">Inserisci il tuo codice</label>
+        <input type="text" id="code" name="Codice" placeholder="Inserisci il tuo codice" required>
+        <h6 class="spantext">devono avere 4 cifre</h6>    
+        <label for="consultant">Seleziona un consulente</label>
+        <select id="consultant" name="Consulente" required>
+            <option value="Agostino">Agostino</option>
+            <option value="Domenico">Domenico</option>
+            <option value="Paolo">Paolo</option>
+        </select>
+        
+        <button type="submit" name="submit" id="submitButton">Prenota Chiamata</button>
+    </form>
+    
+  
+
+    <script src="Googlesheet.js"></script>
+
+</body>
+</html>
